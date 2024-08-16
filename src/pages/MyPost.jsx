@@ -158,7 +158,7 @@ const MyPost = () => {
           <p className="text-center text-white">No posts found</p>
         ) : (
           <ul className="space-y-4">
-            {posts.map((post) => (
+            {posts?.map((post) => (
               <li
                 key={post._id}
                 className="relative p-4 bg-white bg-opacity-80 rounded-lg shadow-md"

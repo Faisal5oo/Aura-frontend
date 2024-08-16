@@ -38,7 +38,6 @@ const CreatePost = () => {
       setError("");
       setTitle("");
       setContent("");
-      console.log(response.data);
     } catch (error) {
       setError("Failed to create post. Please try again.");
       setSuccess("");

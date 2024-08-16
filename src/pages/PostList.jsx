@@ -41,16 +41,16 @@ const PostList = () => {
           All Posts
         </h2>
         {error && <p className="text-red-500 text-center mb-4">{error}</p>}
-        {posts.map((post) => (
+        {posts?.map((post) => (
           <div
             key={post.id}
             className="bg-white p-6 rounded-lg shadow-lg mb-4 backdrop-blur-sm bg-opacity-30"
           >
-            <h2 className="text-2xl font-bold text-white">{post.title}</h2>
-            <p className="text-white mt-2">{post.content}</p>
+            <h2 className="text-2xl font-bold text-white">{post?.title}</h2>
+            <p className="text-white mt-2">{post?.content}</p>
             <div className="flex items-center justify-between mt-4">
               <span className="text-white text-sm">
-                Posted by: {post.author}
+                Posted by: {post?.author}
               </span>
               <span className="text-white text-sm">
                 {new Date(post.createdAt).toLocaleString()}

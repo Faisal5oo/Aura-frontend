@@ -57,11 +57,11 @@ const PostDetail = () => {
     <div className="min-h-screen flex items-center justify-center mt-16">
       <div className="w-full max-w-4xl p-8 bg-white bg-opacity-80 rounded-lg shadow-lg backdrop-blur-lg">
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-6">
-          {post.title}
+          {post?.title}
         </h2>
-        <p className="text-lg text-gray-700 mb-6">{post.content}</p>
+        <p className="text-lg text-gray-700 mb-6">{post?.content}</p>
         <p className="text-sm text-gray-500 text-right">
-          Posted on {new Date(post.createdAt).toLocaleDateString()} by You.
+          Posted on {new Date(post?.createdAt).toLocaleDateString()} by You.
         </p>
       </div>
     </div>

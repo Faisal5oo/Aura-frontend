@@ -28,7 +28,6 @@ const Login = () => {
           password,
         }
       );
-      console.log("response", response.data);
       const { accessToken, id, user } = response.data;
 
       localStorage.setItem("authToken", accessToken);
