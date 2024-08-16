@@ -35,7 +35,7 @@ const PostList = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-500 to-black-500 flex items-center justify-center mt-16">
+    <div className="min-h-screen flex items-center justify-center mt-16">
       <div className="w-full max-w-4xl p-4">
         <h2 className="text-3xl font-bold text-center text-white mb-6">
           All Posts

@@ -131,7 +131,7 @@ const MyPost = () => {
 
   if (error) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-purple-500 to-black-500 p-4 mt-16">
+      <div className="flex items-center justify-center min-h-screen p-4">
         <div className="flex items-center justify-center w-full max-w-md p-6 bg-white bg-opacity-30 rounded-lg shadow-lg backdrop-blur-lg">
           <div className="w-full text-center">
             <h2 className="text-3xl font-bold text-white mb-6">
@@ -149,7 +149,7 @@ const MyPost = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-500 to-black-500 flex items-center justify-center mt-20">
+    <div className="min-h-screen  flex items-center justify-center mt-16">
       <div className="w-full max-w-4xl p-6 bg-white bg-opacity-30 rounded-lg shadow-lg backdrop-blur-lg">
         <h2 className="text-3xl font-bold text-center text-white mb-6">
           My Posts

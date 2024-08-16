@@ -35,7 +35,7 @@ const PostDetail = () => {
 
   if (error) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-500 to-black-500 flex items-center justify-center mt-10">
+      <div className="min-h-screen flex items-center justify-center mt-16">
         <div className="w-full max-w-4xl p-6 bg-white bg-opacity-30 rounded-lg shadow-lg backdrop-blur-lg">
           <p className="text-center text-white-500">{error}</p>
         </div>
@@ -45,7 +45,7 @@ const PostDetail = () => {
 
   if (!post) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-500 to-black-500 flex items-center justify-center mt-10">
+      <div className="min-h-screen  flex items-center justify-center mt-16">
         <div className="w-full max-w-4xl p-6 bg-white bg-opacity-30 rounded-lg shadow-lg backdrop-blur-lg">
           <p className="text-center text-white-500">Post not found</p>
         </div>
@@ -54,7 +54,7 @@ const PostDetail = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-500 to-black-500 flex items-center justify-center mt-20">
+    <div className="min-h-screen flex items-center justify-center mt-16">
       <div className="w-full max-w-4xl p-8 bg-white bg-opacity-80 rounded-lg shadow-lg backdrop-blur-lg">
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-6">
           {post.title}
